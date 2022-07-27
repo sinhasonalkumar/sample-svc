@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "Running commit-msg git pre hook"
+
+
+commit_message="$1"
+
+git-conventional-commits commit-msg-hook "$commit_message"
+
